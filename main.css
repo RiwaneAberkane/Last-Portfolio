@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* *{
+    outline: 1px solid black;  ;
+}  */
+
+:root{
+    --violet--primary : #45316E;
+    --violet--secondary: #5F4A8C;
+    --yellow: #EDD502;
+    --navbar-height: 100px;
+    --fz-big: 800;
+    --fz-medium: 400;
+    --fz-small: 200;
+}
+
+body{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------------------- */
+
+.container{
+    height: calc(100% - var(--navbar-height));
+    width: 100%;
+}
+
+
+
