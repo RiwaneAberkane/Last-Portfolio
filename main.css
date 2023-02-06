@@ -37,6 +37,7 @@ body{
 .container{
     height: calc(100% - var(--navbar-height));
     width: 100%;
+    overflow: scroll;
 }
 
 
