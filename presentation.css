@@ -1,0 +1,31 @@
+.presentation{
+    justify-content: center;
+    align-items: center;
+    gap: 7em;
+    background-color:  var(--violet--primary);
+}
+
+.presentation__card{
+    min-width:350px;
+    min-height: 500px;
+    background-color: black;
+}
+
+.presentation__texte p{
+    color: white;
+    font-size: clamp(.3rem, 5vw, 1.1rem);
+    text-align: justify;
+}
+
+.presentation__mobile{
+    display: none;
+    min-width:350px;
+    min-height: 500px;
+    background-color: black;
+}
+
+@media(max-width: 950px){
+    .presentation__texte{
+        display: none;
+    }
+}

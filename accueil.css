@@ -1,4 +1,32 @@
 .accueil{
-    min-height: 100%;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    background-color:  var(--violet--secondary);
 }
+
+.accueil__titre{
+    font-size: clamp(2rem, 7vw, 9rem);
+    font-weight:var(--fz-big);
+    color: white;
+}
+
+.accueil__texte p{
+    font-size: clamp(1rem, 7vw, 2rem);
+    text-align: center;
+    color: white;
+}
+
+.accueil__cv{
+    position: relative;
+}
+
+.accueil__cv--lien{
+    background-color: var(--yellow);
+    font-size: clamp(.3rem, 5vw, 2rem);
+    padding: .3em 3em;
+    border-radius: 30px;
+    text-decoration: none;
+}
+

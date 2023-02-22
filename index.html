@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="presentation.css">
+    <link rel="stylesheet" href="projets.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,11 +24,18 @@
                 <div class="pacman__food"></div>
             </div>
             <nav>
+                <div class="burgerClass">
+                    <a id="link" href="#">
+                        <span id="burger"></span>
+                    </a>   
+                </div>
+
                 <ul class="navbar__links flex">
-                    <li class="navbar__link"><a href="">Projets</a></li>
+                    <li class="navbar__link"><a href="#projets">Projets</a></li>
                     <li class="navbar__link"><a href="">À propos de moi</a></li>
                     <li class="navbar__link"><a href="">Contact</a></li>
                 </ul>
+
             </nav>
         </div>
     </header>
@@ -35,27 +44,67 @@
 
     <div class="container">
 
-
-        <section class="accueil">
+        <section class="accueil flex">
 
             <h1 class="accueil__titre">Riwane Aberkane</h1>
-            <p>Bonjour ! Je suis développeur web</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, modi.</p>
-            <button>Contactez moi</button>
+            <div class="accueil__texte">
+                <p>Bonjour ! Je suis développeur web !</p>
+                <p>J'aime apprendre de nouvelles choses dans la joie et la bonne humeur alors contactez moi !</p>
+            </div>
+
+             <a class="accueil__cv--lien" href="https://www.canva.com/design/DAFZnHV1f54/e_NJixtkim_yqvLFel2ibg/view?utm_content=DAFZnHV1f54&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">MON CV</a>
 
         </section>
 
 
-        <section class="presentation">
+        <section class="presentation flex">
+            <div class="presentation__card">
+            </div>
+            <div class="presentation__mobile">
 
+            </div>
+            <div class="presentation__texte">
+                <p>Je m'appelle Riwane et je suis un apprenti développeur passionné par la technologie et l'innovation. Depuis que j'ai découvert le monde de la programmation, j'ai su que c'était ce que je voulais faire dans la vie.</p>
+                <br>
+                <p>J'ai commencé à apprendre à coder en autodidacte il y a quelques années, en explorant diverses ressources en ligne et en travaillant sur mes propres projets. Cependant, j'ai rapidement réalisé que je voulais en faire plus et j'ai décidé de suivre une formation en développement web.</p>
+                <br>
+                <p>Actuellement, je suis à la recherche d'un stage de deux mois dans une entreprise de développement logiciel où je pourrai mettre en pratique mes compétences en programmation et en apprendre davantage sur le fonctionnement d'une entreprise dans le domaine de la technologie.</p>
+            </div>
         </section>
 
-        <section class="projets">
+        <section class="projets" id="projets">
+            <h1>Click and drag</h1>
+                <div class="container-carousel">
+                <div class="card-carousel">
+                    <div class="card" id="1">
+                    <div class="image-container"></div>
+                    <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                    </div>
+                    <div class="card" id="2">
+                    <div class="image-container"></div>
+                    <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                    </div>
+                    <div class="card" id="3">
+                    <div class="image-container"></div>
+                    <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                    </div>  
+                    <div class="card" id="4">
+                    <div class="image-container"></div>
+                    <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                    </div>
+                    <div class="card" id="5">
+                    <div class="image-container"></div>
+                    <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                    </div>
+                </div>
+                <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+                </div>
 
         </section>
 
 
     </div>
     
+    <script src="index.js"></script>
 </body>
 </html>
